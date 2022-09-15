@@ -13,9 +13,9 @@ export default function GameCounter() {
                 Free DDOS Best Protection With Quiety.
               </h2>
               <p className="text-white mb-4">
-                There are many variations of passages of Lorem Ipsum available,
+               {` There are many variations of passages of Lorem Ipsum available,
                 but the majority randomised words which don't look even slightly
-                believable. If you are going to use a passage
+                believable. If you are going to use a passage`}
               </p>
             </div>
             <div className="row counter-grid pt-1">
