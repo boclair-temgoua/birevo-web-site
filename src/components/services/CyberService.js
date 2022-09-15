@@ -28,8 +28,8 @@ export const CyberService = () => {
               <div className="cyber feature-info-wrap">
                 <h3 className="h5">Disaster Planning</h3>
                 <p>
-                  Randomised words which don't look even passage of Lorem Ipsum.
-                  You need to be Lorem Ipsum randomised even .
+                  {`Randomised words which don't look even passage of Lorem Ipsum.
+                  You need to be Lorem Ipsum randomised even .`}
                 </p>
               </div>
               <Link
@@ -47,8 +47,8 @@ export const CyberService = () => {
               <div className="cyber feature-info-wrap">
                 <h3 className="h5">Cloud Security</h3>
                 <p>
-                  Randomised words which don't look even passage of Lorem Ipsum.
-                  You need to be Lorem Ipsum randomised even .
+                {`Randomised words which don't look even passage of Lorem Ipsum.
+                  You need to be Lorem Ipsum randomised even .`}
                 </p>
               </div>
               <Link
@@ -66,8 +66,8 @@ export const CyberService = () => {
               <div className="cyber feature-info-wrap">
                 <h3 className="h5">Database Security</h3>
                 <p>
-                  Randomised words which don't look even passage of Lorem Ipsum.
-                  You need to be Lorem Ipsum randomised even .
+                {`Randomised words which don't look even passage of Lorem Ipsum.
+                  You need to be Lorem Ipsum randomised even .`}
                 </p>
               </div>
               <Link
@@ -85,8 +85,8 @@ export const CyberService = () => {
               <div className="cyber feature-info-wrap">
                 <h3 className="h5">Locker Security</h3>
                 <p>
-                  Randomised words which don't look even passage of Lorem Ipsum.
-                  You need to be Lorem Ipsum randomised even .
+                {`Randomised words which don't look even passage of Lorem Ipsum.
+                  You need to be Lorem Ipsum randomised even .`}
                 </p>
               </div>
               <Link
@@ -104,8 +104,8 @@ export const CyberService = () => {
               <div className="cyber feature-info-wrap">
                 <h3 className="h5">Data Security</h3>
                 <p>
-                  Randomised words which don't look even passage of Lorem Ipsum.
-                  You need to be Lorem Ipsum randomised even .
+                {`Randomised words which don't look even passage of Lorem Ipsum.
+                  You need to be Lorem Ipsum randomised even .`}
                 </p>
               </div>
               <Link
@@ -123,8 +123,8 @@ export const CyberService = () => {
               <div className="cyber feature-info-wrap">
                 <h3 className="h5">Web Security</h3>
                 <p>
-                  Randomised words which don't look even passage of Lorem Ipsum.
-                  You need to be Lorem Ipsum randomised even .
+                {`Randomised words which don't look even passage of Lorem Ipsum.
+                  You need to be Lorem Ipsum randomised even .`}
                 </p>
               </div>
               <Link

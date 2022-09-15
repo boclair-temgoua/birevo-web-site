@@ -45,9 +45,9 @@ export default function GameReview() {
                                 </svg>
                             </span>
                             <p className="mt-3 text-off-white">
-                                "Humouror randomised words which look even slightly believable. If
-                                Lorem Ipsum Lorem Ipsum, you need to be sure there isn't anything
-                                embarrassing."
+                                Humouror randomised words which look even slightly believable. If
+                                Lorem Ipsum Lorem Ipsum, you need to be sure there  anything
+                                embarrassing
                             </p>
                             <hr className="spacer" />
                             <div
@@ -90,9 +90,9 @@ export default function GameReview() {
                                 </svg>
                             </span>
                             <p className="mt-3 text-off-white">
-                                "Humouror randomised words which look even slightly believable. If
-                                Lorem Ipsum Lorem Ipsum, you need to be sure there isn't anything
-                                embarrassing."
+                            Humouror randomised words which look even slightly believable. If
+                                Lorem Ipsum Lorem Ipsum, you need to be sure there anything
+                                embarrassing
                             </p>
                             <hr className="spacer" />
                             <div
@@ -135,9 +135,9 @@ export default function GameReview() {
                                 </svg>
                             </span>
                             <p className="mt-3 text-off-white">
-                                "Humouror randomised words which look even slightly believable. If
-                                Lorem Ipsum Lorem Ipsum, you need to be sure there isn't anything
-                                embarrassing."
+                            Humouror randomised words which look even slightly believable. If
+                                Lorem Ipsum Lorem Ipsum, you need to be sure there  anything
+                                embarrassing
                             </p>
                             <hr className="spacer" />
                             <div

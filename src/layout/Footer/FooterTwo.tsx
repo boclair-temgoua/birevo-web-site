@@ -27,22 +27,22 @@ const FooterTwo = () => {
                 </p>
                 <ul className="list-unstyled list-inline cyber-footer-social-list mb-0">
                   <li className="list-inline-item">
-                    <a href="/#">
+                    <a href="#">
                       <i><FaFacebookF/></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="/#">
+                    <a href="#">
                       <i><FaInstagram/></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="/#">
+                    <a href="#">
                       <i><FaDribbble/></i>
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="/#">
+                    <a href="#">
                       <i><FaGithub/></i>
                     </a>
                   </li>
