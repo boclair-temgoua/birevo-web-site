@@ -1,7 +1,32 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@layout/*": [
+        "src/layout/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@styles/*": [
+        "src/styles/*", "src/pages/app-landing/index.js"
+      ],
+      "@utils/*": [
+        "src/utils/*"
+      ]
+    },
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -15,6 +40,27 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  // "compilerOptions": {
+  //   "baseUrl": ".",
+  //   "paths": {
+  //     "@components/*": ["src/components/*"],
+  //     "@assets/*": ["src/assets/*"],
+  //     "@layout/*": ["src/layout/*"],
+  //     "@pages/*": ["src/pages/*"],
+  //     "@styles/*": ["src/styles/*"],
+  //     "@utils/*": ["src/utils/*"]
+  //   }
+  // },
+  // "include": ["."],
+  // "exclude": ["node_modules"]
+  // "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "src",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
