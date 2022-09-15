@@ -15,7 +15,7 @@
         "src/pages/*"
       ],
       "@styles/*": [
-        "src/styles/*"
+        "src/styles/*", "src/utils/data.js"
       ],
       "@utils/*": [
         "src/utils/*"

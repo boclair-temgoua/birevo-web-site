@@ -104,7 +104,7 @@ const Navbar = ({ navDark }: any) => {
                       <h6 className="drop-heading">Different Home</h6>
                       {navHomeTwo.map((navH, i) => (
                         <span key={i + 7}>
-                          <Link href={navH.href}>
+                          <Link href={navH.href} scroll={true}>
                             <a className="dropdown-link">
                               <span className="demo-list bg-primary rounded text-white fw-bold">
                                 {i + 7}
@@ -122,18 +122,18 @@ const Navbar = ({ navDark }: any) => {
                 </div>
               </li>
               <li>
-                <Link href="about-us">
+                <Link href="about-us" scroll={true}>
                   <a className="nav-link">About</a>
                 </Link>
               </li>
               <li>
-                <Link href="services">
+                <Link href="services" scroll={true}>
                   <a className="nav-link">Services</a>
                 </Link>
               </li>
 
               <li>
-                <Link href="pricing">
+                <Link href="pricing" scroll={true}>
                   <a className="nav-link">Pricing</a>
                 </Link>
               </li>
@@ -153,7 +153,7 @@ const Navbar = ({ navDark }: any) => {
                       <h6 className="drop-heading">Useful Links</h6>
                       {navCompanyLinks.map((navLink, i) => (
                         <div key={i + 1}>
-                          <Link href={navLink.href}>
+                          <Link href={navLink.href} scroll={true}>
                             <a className="dropdown-link px-0">
                               <i className="me-1">{navLink.icon}</i>
                               <span className="drop-title mb-0">{navLink.title} </span>
