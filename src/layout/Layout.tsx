@@ -6,7 +6,7 @@ export type LayoutProps = {
   desc: string;
   hasClass: string;
   classOpt: string;
-  children: JSX.Element,
+  children: JSX.Element | any,
 }
 
 const Layout = ({ children, title, desc, hasClass, classOpt }: LayoutProps) => {

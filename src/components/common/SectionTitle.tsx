@@ -4,8 +4,9 @@ type SectionTitleProps = {
   subtitle: string;
   title: string;
   dark: string;
-  centerAlign: string;
-  description: string;
+  darkBg: any,
+  centerAlign: any;
+  description: any;
 }
 
 const SectionTitle = ({ subtitle, dark, title, centerAlign, description }: SectionTitleProps) => {

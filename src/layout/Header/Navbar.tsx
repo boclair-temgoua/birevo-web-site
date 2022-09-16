@@ -86,7 +86,7 @@ const Navbar = ({ navDark, classOption }: any) => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Home
+                  Products
                 </a>
                 <div className="dropdown-menu border-0 rounded-custom shadow py-0 bg-white">
                   <div className="dropdown-grid rounded-custom width-full">
@@ -194,10 +194,10 @@ const Navbar = ({ navDark, classOption }: any) => {
           </div>
 
           <div className="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
-            <Link href="login">
-              <a className="btn btn-link text-decoration-none me-2">Sign In</a>
+            <Link href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}/login`}>
+              <a className="btn btn-link text-decoration-none me-2">Log In</a>
             </Link>
-            <Link href="request-demo">
+            <Link href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}/registration`}>
               <a className="btn btn-primary">Get Started</a>
             </Link>
           </div>

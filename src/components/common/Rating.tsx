@@ -2,7 +2,7 @@ import React from 'react';
 import { FaStar } from 'react-icons/fa';
 
 type RatingProps = {
-  classOption: string;
+  classOption?: string;
 }
 
 const Rating = ({ classOption }: RatingProps) => {

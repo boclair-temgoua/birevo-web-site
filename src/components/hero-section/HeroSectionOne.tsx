@@ -7,43 +7,29 @@ import Image from 'next/image';
 
 const HeroSectionOne = () => {
   const [isOpen, setOpen] = useState(false);
-  return ( 
+  return (
     <section
       className="hero-section ptb-120 text-white bg-gradient"
       style={{ background: "url('/hero-dot-bg.png')no-repeat center right" }}
     >
-      {/* <ModalVideo
-        channel="youtube"
-        isOpen={isOpen}
-        videoId="hAP2QF--2Dg"
-        onClose={() => setOpen(false)}
-      /> */}
       <div className="container">
         <div className="row align-items-center">
-          <div className="col-lg-6 col-md-10">
+          <div className="col-lg-7 col-md-10">
             <div className="hero-content-wrap mt-5 mt-lg-0 mt-xl-0">
               <h1 className="fw-bold display-5">
-                Get Fully Control and Visibility your Company
+                One app to control them all.
               </h1>
               <p className="lead">
-                Proactively coordinate quality quality vectors vis-a-vis supply
-                chains. Quickly engage client-centric web services.
+              {`Businesses grow faster when they can rely on coupons or coupons. 
+              ${process.env.NEXT_PUBLIC_NAME} offers coupon management services to complete your customers' purchases`}
               </p>
               <div className="action-btns mt-5 align-items-center flex d-sm-flex d-lg-flex d-md-flex">
-                <Link href="/request-demo">
-                  <a className="btn btn-primary me-3">Request For Demo</a>
+                <Link href={`${process.env.NEXT_PUBLIC_DASHBOARD_URL}/registration`}>
+                  <a className="btn btn-primary me-3">Sing up with email</a>
                 </Link>
-                <div>
-                    <a href='#!'
-                      onClick={() => setOpen(true)}
-                      type="button"
-                      className="text-white text-decoration-none d-inline-flex align-items-center watch-now-btn"
-                    >
-                      <IoPlayCircleOutline className="me-2" /> Watch Demo
-                    </a>
-                </div>
               </div>
-              <div className="row justify-content-lg-start mt-60">
+
+              {/* <div className="row justify-content-lg-start mt-60">
                 <h6 className="text-white-70 mb-2">Our Top Clients:</h6>
                 <div className="col-4 col-sm-3 my-2 ps-lg-0">
                   <Image
@@ -72,13 +58,14 @@ const HeroSectionOne = () => {
                     className="img-fluid"
                   />
                 </div>
-              </div>
+              </div> */}
+
             </div>
           </div>
-          <div className="col-lg-6 col-md-8 mt-5">
+          <div className="col-lg-5 col-md-8 mt-5">
             <div className="hero-img position-relative circle-shape-images">
               <img
-                src="/hero-1.png"
+                src="/birevo/home-p1.png"
                 alt="hero img"
                 className="img-fluid position-relative z-5"
               />

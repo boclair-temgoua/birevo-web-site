@@ -69,10 +69,10 @@ const Footer = ({ footerLight, style, footerGradient }: FooterProps) => {
                       className="btn btn-primary mt-3 mt-lg-0 mt-md-0"
                     />
                   </form>
-                  <div className="ratting-wrap mt-4">
+                  {/* <div className="ratting-wrap mt-4">
                     <h6 className="mb-0">10/10 Overall rating</h6>
-                    {/* <Rating /> */}
-                  </div>
+                    <Rating />
+                  </div> */}
                 </div>
               </div>
               <div className="col-md-12 col-lg-7 mt-4 mt-md-0 mt-lg-0">

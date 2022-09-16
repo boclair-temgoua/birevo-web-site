@@ -5,8 +5,8 @@ import Link from 'next/link';
 type PageHeaderProps = {
   title: string;
   desc: string;
-  blogtags: any;
-  integration: any;
+  blogtags?: any;
+  integration?: any;
 }
 
 
