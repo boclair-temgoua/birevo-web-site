@@ -100,7 +100,7 @@ export default function DigiContact() {
                   </div>
                   <div className="col-12">
                     <textarea
-                      rows="5"
+                      rows={5}
                       className="w-100 form-control"
                       placeholder="Message.."
                     ></textarea>
