@@ -21,7 +21,7 @@ export default function GameReview() {
                         </div>
                     </div>
                 </div>
-                <div className="row mt-5 g-4 justify-content-center z-10">
+                <div className="row mt-5 g-4 justify-content-center">
                     <div className="col-lg-4 col-md-6">
                         <div className="sh-feedback-wrapper mb-5 mb-lg-0">
                             <img
@@ -45,9 +45,9 @@ export default function GameReview() {
                                 </svg>
                             </span>
                             <p className="mt-3 text-off-white">
-                                Humouror randomised words which look even slightly believable. If
-                                Lorem Ipsum Lorem Ipsum, you need to be sure there  anything
-                                embarrassing
+                                "Humouror randomised words which look even slightly believable. If
+                                Lorem Ipsum Lorem Ipsum, you need to be sure there isn't anything
+                                embarrassing."
                             </p>
                             <hr className="spacer" />
                             <div
@@ -90,9 +90,9 @@ export default function GameReview() {
                                 </svg>
                             </span>
                             <p className="mt-3 text-off-white">
-                            Humouror randomised words which look even slightly believable. If
-                                Lorem Ipsum Lorem Ipsum, you need to be sure there anything
-                                embarrassing
+                                "Humouror randomised words which look even slightly believable. If
+                                Lorem Ipsum Lorem Ipsum, you need to be sure there isn't anything
+                                embarrassing."
                             </p>
                             <hr className="spacer" />
                             <div
@@ -135,9 +135,9 @@ export default function GameReview() {
                                 </svg>
                             </span>
                             <p className="mt-3 text-off-white">
-                            Humouror randomised words which look even slightly believable. If
-                                Lorem Ipsum Lorem Ipsum, you need to be sure there  anything
-                                embarrassing
+                                "Humouror randomised words which look even slightly believable. If
+                                Lorem Ipsum Lorem Ipsum, you need to be sure there isn't anything
+                                embarrassing."
                             </p>
                             <hr className="spacer" />
                             <div
@@ -158,7 +158,7 @@ export default function GameReview() {
                         </div>
                     </div>
                 </div>
-                <div className="position-relative z-10 pt-80">
+                <div className="position-relative pt-80">
                     <div
                         className="game-cta-bg rounded-top px-4 px-md-0 ps-md-5 pt-80"
                         style={{

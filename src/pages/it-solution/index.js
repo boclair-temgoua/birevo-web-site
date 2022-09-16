@@ -13,23 +13,23 @@ import PriceFour from '@components/pricing/PriceFour';
 import TechTab from '@components/tabs/TechTab';
 import PortfolioTab from '@components/tabs/PortfolioTab';
 
-const SassCompanyTwoHome = () => {
+const ItSolution = () => {
   return (
     <Layout>
       <Navbar />
       <HeroSectionNine />
-      <WhyChoosUs/>
-      <TechTab/>
-      <ServiceIt/>
-      <PortfolioTab/>
-      <CustomerTwo/>
-      <TestimonialFive/>
-      <PriceFour/>
-      <SupportOne className/>
-      <LatestBlog/>
-      <Footer footerGradient/>
+      <WhyChoosUs />
+      <TechTab />
+      <ServiceIt />
+      <PortfolioTab />
+      <CustomerTwo />
+      <TestimonialFive />
+      <PriceFour />
+      <SupportOne className />
+      <LatestBlog />
+      <Footer footerGradient />
     </Layout>
   );
 };
 
-export default SassCompanyTwoHome;
+export default ItSolution;

@@ -1,10 +1,12 @@
-import VideoModal from '@components/common/VideoModal'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 import {RiArrowDownLine} from 'react-icons/ri'
+import React, { useState } from 'react';
+import { IoPlayCircleOutline } from 'react-icons/io5';
+// import ModalVideo from 'react-modal-video';
 
 const HeroSectionTen = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <section
     className="hero-section text-white hero-ten"
@@ -13,6 +15,12 @@ const HeroSectionTen = () => {
         "url('/cyber_banner_img.png')no-repeat center center",
     }}
   >
+    {/* <ModalVideo
+        channel="youtube"
+        isOpen={isOpen}
+        videoId="hAP2QF--2Dg"
+        onClose={() => setOpen(false)}
+      /> */}
     <div className="container">
       <div className="row align-items-center">
         <div className="col-lg-6 col-md-10">
@@ -24,11 +32,19 @@ const HeroSectionTen = () => {
               Velit officia consequat duis enim velit mollit Exercitation
               veniam consequat sunt nostrud amet.
             </p>
-            <div className="action-btn mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
+            <div className="action-btns mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
               <Link href="/request-demo" >
                   <a className="btn btn-primary">Discover More</a>
               </Link>
-              <VideoModal className="true" />
+              <Link href="/">
+                    <a
+                      onClick={() => setOpen(true)}
+                      type="button"
+                      className="text-decoration-none d-inline-flex align-items-center watch-now-btn"
+                    >
+                      <IoPlayCircleOutline className="me-2" /> Watch Demo
+                    </a>
+                  </Link>
             </div>
           </div>
         </div>

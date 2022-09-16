@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { FaRegCheckCircle, FaArrowRight } from 'react-icons/fa'
+import {FaRegCheckCircle,FaArrowRight} from 'react-icons/fa'
 
 const WhyChoosUs = () => {
   return (
@@ -51,38 +51,38 @@ const WhyChoosUs = () => {
               <ul className="list-unstyled d-flex flex-wrap list-two-col mt-4 mb-4">
                 <li className="py-1">
                   <i className=" me-2 text-primary">
-                    <FaRegCheckCircle />
+                    <FaRegCheckCircle/>
                   </i>
                   Digital Conference
                 </li>
                 <li className="py-1">
-                  <i className=" me-2 text-primary">     <FaRegCheckCircle /></i>
+                  <i className=" me-2 text-primary">     <FaRegCheckCircle/></i>
                   Greate Speckers
                 </li>
                 <li className="py-1">
-                  <i className=" me-2 text-primary">     <FaRegCheckCircle /></i>Event
+                  <i className=" me-2 text-primary">     <FaRegCheckCircle/></i>Event
                   Management
                 </li>
                 <li className="py-1">
-                  <i className=" me-2 text-primary">     <FaRegCheckCircle /></i>
+                  <i className=" me-2 text-primary">     <FaRegCheckCircle/></i>
                   Have Fun on Event
                 </li>
                 <li className="py-1">
-                  <i className=" me-2 text-primary">     <FaRegCheckCircle /></i>Sales
+                  <i className=" me-2 text-primary">     <FaRegCheckCircle/></i>Sales
                   compliance
                 </li>
                 <li className="py-1">
-                  <i className=" me-2 text-primary">     <FaRegCheckCircle /></i>
+                  <i className=" me-2 text-primary">     <FaRegCheckCircle/></i>
                   Showcasing success
                 </li>
               </ul>
               <Link href="/about-us">
-                <a
-                  className="link-with-icon text-decoration-none mt-3 btn btn-primary"
-                >
-                  Learn More
-                  <i><FaArrowRight /></i>
-                </a>
+              <a
+                className="link-with-icon text-decoration-none mt-3 btn btn-primary"
+              >
+                Learn More
+                <i><FaArrowRight/></i>
+              </a>
               </Link>
             </div>
           </div>

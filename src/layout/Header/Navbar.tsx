@@ -4,10 +4,15 @@ import Link from 'next/link';
 import { HiMenu, HiOutlineX } from 'react-icons/hi';
 
 import OffCanvasMenu from './OffCanvasMenu';
-import { navHomeOne, navHomeTwo, navCompanyLinks, navCompanyPage } from '../../utils/data';
+import {
+  navHomeOne,
+  navHomeTwo,
+  navCompanyLinks,
+  navCompanyPage,
+} from '../../utils/data';
 import dynamic from 'next/dynamic';
 
-const Navbar = ({ navDark }: any) => {
+const Navbar = ({ navDark, classOption }: any) => {
   const [scroll, setScroll] = useState(0);
   const [headerTop, setHeaderTop] = useState(0);
 
@@ -26,11 +31,14 @@ const Navbar = ({ navDark }: any) => {
 
   return (
     <header
-      className={`main-header ${navDark ? 'position-absolute' : ''} w-100 `}
+      className={`main-header ${
+        navDark ? 'position-absolute' : ''
+      } w-100 ${classOption}`}
     >
       <nav
-        className={`navbar navbar-expand-xl z-10 ${navDark ? 'navbar-dark' : 'navbar-light'
-          } sticky-header ${scroll > headerTop ? 'affix' : ''}`}
+        className={`navbar navbar-expand-xl z-50 ${
+          navDark ? 'navbar-dark' : 'navbar-light'
+        } sticky-header ${scroll > headerTop ? 'affix' : ''}`}
       >
         <div className="container d-flex align-items-center justify-content-lg-between position-relative">
           <Link href="/">
@@ -54,9 +62,9 @@ const Navbar = ({ navDark }: any) => {
               )}
             </a>
           </Link>
-          <a
+          <button
             className="navbar-toggler position-absolute right-0 border-0"
-            href="#offcanvasWithBackdrop"
+            id="#offcanvasWithBackdrop"
             role="button"
           >
             <span
@@ -66,7 +74,7 @@ const Navbar = ({ navDark }: any) => {
             >
               <HiMenu />
             </span>
-          </a>
+          </button>
           <div className="clearfix"></div>
           <div className="collapse navbar-collapse justify-content-center">
             <ul className="nav col-12 col-md-auto justify-content-center main-menu">
@@ -103,11 +111,11 @@ const Navbar = ({ navDark }: any) => {
                     <div className="dropdown-grid-item radius-right-side bg-light">
                       <h6 className="drop-heading">Different Home</h6>
                       {navHomeTwo.map((navH, i) => (
-                        <span key={i + 7}>
-                          <Link href={navH.href} scroll={true}>
+                        <span key={i + 9}>
+                          <Link href={navH.href}>
                             <a className="dropdown-link">
                               <span className="demo-list bg-primary rounded text-white fw-bold">
-                                {i + 7}
+                                {i + 9}
                               </span>
                               <span className="dropdown-info mb-0">
                                 <span className="drop-title">{navH.title}</span>
@@ -122,18 +130,18 @@ const Navbar = ({ navDark }: any) => {
                 </div>
               </li>
               <li>
-                <Link href="about-us" scroll={true}>
+                <Link href="about-us">
                   <a className="nav-link">About</a>
                 </Link>
               </li>
               <li>
-                <Link href="services" scroll={true}>
+                <Link href="services">
                   <a className="nav-link">Services</a>
                 </Link>
               </li>
 
               <li>
-                <Link href="pricing" scroll={true}>
+                <Link href="pricing">
                   <a className="nav-link">Pricing</a>
                 </Link>
               </li>
@@ -153,10 +161,12 @@ const Navbar = ({ navDark }: any) => {
                       <h6 className="drop-heading">Useful Links</h6>
                       {navCompanyLinks.map((navLink, i) => (
                         <div key={i + 1}>
-                          <Link href={navLink.href} scroll={true}>
+                          <Link href={navLink.href}>
                             <a className="dropdown-link px-0">
-                              <i className="me-1">{navLink.icon}</i>
-                              <span className="drop-title mb-0">{navLink.title} </span>
+                              <span className="me-2">{navLink.icon}</span>
+                              <span className="drop-title mb-0">
+                                {navLink.title}{' '}
+                              </span>
                             </a>
                           </Link>
                         </div>
@@ -168,8 +178,10 @@ const Navbar = ({ navDark }: any) => {
                         <div key={i + 1}>
                           <Link href={navPage.href}>
                             <a className="dropdown-link">
-                              <i className="me-1">{navPage.icon}</i>
-                              <span className="drop-title mb-0">{navPage.title} </span>
+                              <span className="me-2">{navPage.icon}</span>
+                              <span className="drop-title mb-0">
+                                {navPage.title}{' '}
+                              </span>
                             </a>
                           </Link>
                         </div>
@@ -182,7 +194,7 @@ const Navbar = ({ navDark }: any) => {
           </div>
 
           <div className="action-btns text-end me-5 me-lg-0 d-none d-md-block d-lg-block">
-            <Link href="https://app-birevo.vercel.app/login">
+            <Link href="login">
               <a className="btn btn-link text-decoration-none me-2">Sign In</a>
             </Link>
             <Link href="request-demo">
@@ -191,7 +203,7 @@ const Navbar = ({ navDark }: any) => {
           </div>
 
           <div
-            className="offcanvas offcanvas-end"
+            className="offcanvas offcanvas-end d-xl-none"
             tabIndex={-1}
             id="offcanvasWithBackdrop"
           >

@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper/core";
 import Image from "next/image";
-import {FaStar} from 'react-icons/fa'
+import { FaStar } from 'react-icons/fa'
 
 SwiperCore.use([Navigation]);
 
@@ -84,19 +84,19 @@ const TestimonialFive = () => {
                         <span>Product Designer</span>
                         <ul className="review-rate mb-0 list-unstyled list-inline">
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                         </ul>
                       </div>
@@ -113,7 +113,7 @@ const TestimonialFive = () => {
 
                     <div className="author d-flex">
                       <div className="author-img me-3">
-                      <Image
+                        <Image
                           src="/testimonial/author1.jpg"
                           alt="author "
                           className="rounded-circle"
@@ -126,19 +126,19 @@ const TestimonialFive = () => {
                         <span>Product Designer</span>
                         <ul className="review-rate mb-0 list-unstyled list-inline">
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                         </ul>
                       </div>
@@ -146,7 +146,7 @@ const TestimonialFive = () => {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <div className="swiper-slide p-4 bg-white rounded-custom position-relative shadow-sm">
+                  <div className="p-4 bg-white rounded-custom position-relative shadow-sm">
                     <p>
                       Pellentesque nec nam aliquam sem. Ultricies lacus sed
                       turpis tincidunt id aliquet risus. Consequat nisl vel
@@ -168,19 +168,19 @@ const TestimonialFive = () => {
                         <span>FrontEnd Developer</span>
                         <ul className="review-rate mb-0 list-unstyled list-inline">
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                           <li className="list-inline-item">
-                            <i className="text-warning"><FaStar/></i>
+                            <i className="text-warning"><FaStar /></i>
                           </li>
                         </ul>
                       </div>

@@ -27,9 +27,12 @@ const SoftwareApplicationHome = () => {
       <WorkProcessFour />
       <TestimonialTwo />
       <SupportOne className />
-      <IntegrationTwo bgWhite/>
+      <IntegrationTwo bgWhite />
       <LatestBlog />
-      <Footer />
+      <Footer style={{
+        background:
+          "url('/page-header-bg.svg')no-repeat bottom right",
+      }} />
     </Layout>
   );
 };

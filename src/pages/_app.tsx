@@ -1,11 +1,9 @@
+// import '@assets/css/bootstrap.min.css';
 import { AppProps } from 'next/app';
-import '@assets/css/bootstrap.min.css';
-import '@assets/css/style.css';
-import '@assets/css/fontawesome-all.min.css';
+import '@assets/scss/main.scss';
+import '@assets/fonts/fontawesome-all.min.css';
 
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-// Import Swiper styles
+// Import Swiper style
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -13,37 +11,27 @@ import 'swiper/css/scrollbar';
 import Script from 'next/script'
 
 //Modal Video
-// import 'react-modal-video/scss/modal-video.scss';
 import Head from 'next/head';
 import { Fragment } from 'react';
 
-const queryClient = new QueryClient()
-
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-
-    <QueryClientProvider client={queryClient}>
-      <Fragment>
-        <Script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-          crossOrigin="anonymous"
-        ></Script>
-        <Head>
-          <meta
-            name="viewport"
-            content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
-          />
+    <Fragment>
+      <Script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossOrigin="anonymous"
+      ></Script>
+      <Head>
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
+        />
 
 
-        </Head>
-        <Component {...pageProps} />
-      </Fragment>
-      {/* The rest of your application */}
-      {Boolean(process.env.NEXT_PUBLIC_QUERY_DEV_TOOLS) && (<ReactQueryDevtools initialIsOpen={false} />)}
-    </QueryClientProvider>
-
-
+      </Head>
+      <Component {...pageProps} />
+    </Fragment>
   );
 }
 

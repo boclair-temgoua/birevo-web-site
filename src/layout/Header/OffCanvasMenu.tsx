@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { navCompanyLinks, navCompanyPage, navHomeOne, offcanvasMenuData } from '../../utils/data';
+import { navCompanyLinks, navCompanyPage, offcanvasMenuData } from '../../utils/data';
 
 const OffCanvasMenu = () => {
   return (

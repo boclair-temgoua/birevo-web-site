@@ -21,7 +21,6 @@ const HeroSectionSix = () => {
                 title="Advanced Feature to Grow Your Business"
                 desc="Proactively coordinate quality quality vectors vis-a-vis supply chains engage client-centric web services."
               />
-
               <div className="action-btns mt-5">
                 <Link href="/request-demo">
                   <a className="btn btn-primary me-3">Request Demo</a>

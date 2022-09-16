@@ -43,8 +43,8 @@ const FaqFour = () => {
                   <div className="accordion-body">
                     There are many variations of passages of Lorem Ipsum
                     available but the majority suffered is alteration in that
-                    words which  look even slightly believable. If you
-                    are Lorem Ipsum you need to be sure there  anything
+                    words which don't look even slightly believable. If you
+                    are Lorem Ipsum you need to be sure there isn't anything
                     ready too much embarrassing.
                   </div>
                 </div>
@@ -70,8 +70,8 @@ const FaqFour = () => {
                   <div className="accordion-body">
                     There are many variations of passages of Lorem Ipsum
                     available but the majority suffered is alteration in that
-                    words which  look even slightly believable. If you
-                    are Lorem Ipsum you need to be sure there  anything
+                    words which don't look even slightly believable. If you
+                    are Lorem Ipsum you need to be sure there isn't anything
                     ready too much embarrassing.
                   </div>
                 </div>
@@ -97,8 +97,8 @@ const FaqFour = () => {
                   <div className="accordion-body">
                     There are many variations of passages of Lorem Ipsum
                     available but the majority suffered is alteration in that
-                    words which look even slightly believable. If you
-                    are Lorem Ipsum you need to be sure there  anything
+                    words which don't look even slightly believable. If you
+                    are Lorem Ipsum you need to be sure there isn't anything
                     ready too much embarrassing.
                   </div>
                 </div>
@@ -112,7 +112,7 @@ const FaqFour = () => {
                     data-bs-target="#collapse-4"
                     aria-expanded="false"
                   >
-                    The Difference Between IDS And IBS?
+                    What's The Difference Between IDS And IBS?
                   </button>
                 </h5>
                 <div
@@ -124,8 +124,8 @@ const FaqFour = () => {
                   <div className="accordion-body">
                     There are many variations of passages of Lorem Ipsum
                     available but the majority suffered is alteration in that
-                    words which look even slightly believable. If you
-                    are Lorem Ipsum you need to be sure there  anything
+                    words which don't look even slightly believable. If you
+                    are Lorem Ipsum you need to be sure there isn't anything
                     ready too much embarrassing.
                   </div>
                 </div>

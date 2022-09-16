@@ -1,3 +1,4 @@
+import React from 'react'
 import GameCounter from '@components/counter/GameCounter'
 import GameFaq from '@components/faq/GameFaq'
 import GameFeatures from '@components/features/GameFeaures'
@@ -9,9 +10,9 @@ import GameServices from '@components/services/GameServices'
 import GameFooter from '@layout/Footer/GameFooter'
 import Navbar from '@layout/Header/Navbar'
 import Layout from '@layout/Layout'
-import React from 'react'
 
-export default function index() {
+
+const GameSolution = () => {
   return (
     <Layout title='Game Server' classOpt='bg-black'>
       <Navbar navDark />
@@ -24,6 +25,9 @@ export default function index() {
       <GameFaq />
       <GameReview />
       <GameFooter />
-    </Layout>
-  )
+    </Layout>)
 }
+
+export default GameSolution
+
+

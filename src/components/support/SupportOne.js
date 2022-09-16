@@ -1,10 +1,13 @@
-import React from 'react';
+
 import Link from 'next/link';
 import { FaRegCheckCircle } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { IoPlayCircleOutline } from 'react-icons/io5';
+// import ModalVideo from 'react-modal-video';
 
-import VideoModal from '../common/VideoModal';
 
 const SupportOne = ({ className }) => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <section
       className={`${
@@ -13,6 +16,12 @@ const SupportOne = ({ className }) => {
           : 'cta-subscribe pt-60 pb-120'
       }`}
     >
+        {/* <ModalVideo
+        channel="youtube"
+        isOpen={isOpen}
+        videoId="hAP2QF--2Dg"
+        onClose={() => setOpen(false)}
+      /> */}
       <div className="container">
         <div
           className={`${
@@ -35,12 +44,17 @@ const SupportOne = ({ className }) => {
                   </p>
                 </div>
                 <div className="form-block-banner mw-60 m-auto mt-5">
-                  <Link href="/contact-us">
-                    <a className="btn btn-primary">Contact with Us</a>
-                  </Link>
-
-                  <VideoModal className="true" />
-                </div>
+                            <Link href='/contact-us'>
+                            <a  className="btn btn-primary">Contact with Us</a>
+                            </Link>
+                            <a href="#!"
+                             onClick={() => setOpen(true)}
+                               className="text-white text-decoration-none popup-youtube d-inline-flex align-items-center watch-now-btn ms-lg-3 ms-md-3 mt-3 mt-lg-0"> 
+                                    <span>
+                                    <IoPlayCircleOutline className='me-1'/>
+                                       Watch Demo</span>
+                                     </a>
+                  </div>
                 <ul className="nav justify-content-center subscribe-feature-list mt-4">
                   <li className="nav-item">
                     <span>

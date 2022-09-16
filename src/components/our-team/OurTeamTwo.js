@@ -19,7 +19,7 @@ const OurTeamTwo = () => {
         <div className="col-lg-7 col-md-4">
           <div className="team-btn text-lg-end">
             <Link href="/about-us">
-              <a className="rounded-btn text-decoration-none">More Member</a>
+              <a className="btn rounded-pill btn-primary">More Member</a>
             </Link>
           </div>
         </div>

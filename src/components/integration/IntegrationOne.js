@@ -12,8 +12,7 @@ const IntegrationOne = () => {
           <div className="col-lg-3">
             <div className="integration-list-wrap">
               {integrationOneLeft.map((integration, i) => (
-                <span key={i + 1}>
-                  <Link href="/integration-single">
+                  <Link href="/integration-single" key={i + 1}>
                     <a
                       className={integration.className}
                       data-bs-toggle="tooltip"
@@ -29,7 +28,6 @@ const IntegrationOne = () => {
                       />
                     </a>
                   </Link>
-                </span>
               ))}
             </div>
           </div>
@@ -46,24 +44,20 @@ const IntegrationOne = () => {
             <div className="col-lg-4">
               <div className="integration-list-wrap">
                 {integrationOneRight.map((integration, i) => (
-                  <span key={i + 1}>
-                    <Link href="/integration-single">
+                    <Link href="/integration-single" key={i + 1}>
                       <a
                         className={integration.className}
                         data-bs-toggle="tooltip"
                         data-bs-placement="top"
                         title="Your Brand Name"
                       >
-                        <Image
-                          width={40}
-                          height={40}
+                        <img
                           src={integration.image}
                           alt="integration"
                           className="img-fluid rounded-circle"
                         />
                       </a>
                     </Link>
-                  </span>
                 ))}
               </div>
             </div>

@@ -17,24 +17,24 @@ import CryptoBlog from '@components/blogs/CryptoBlog';
 
 //this is for crypto landing demo
 
-const AppLandingOne = () => {
+const CryptoLanding = () => {
   return (
     <Layout>
       <Navbar navDark />
-      <HeroSectionEleven/>
-      <CryptoPromo/>
-      <CryptoCusomerCounter/>
-      <CryptoTable/>
-      <CountDown/>
-      <CryptoCtaOne/>
-      <OurTeamTwo/>
-      <HowItAllStarted/>
-      <TestimonialFour/>
-      <CryptoBlog/>
-      <CryptoCta/>
-      <CryptoFooter/>
+      <HeroSectionEleven />
+      <CryptoPromo />
+      <CryptoCusomerCounter />
+      <CryptoTable />
+      <CountDown />
+      <CryptoCtaOne />
+      <OurTeamTwo />
+      <HowItAllStarted />
+      <TestimonialFour />
+      <CryptoBlog />
+      <CryptoCta />
+      <CryptoFooter />
     </Layout>
   );
 };
 
-export default AppLandingOne;
+export default CryptoLanding;

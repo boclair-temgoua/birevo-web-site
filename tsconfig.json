@@ -15,7 +15,7 @@
         "src/pages/*"
       ],
       "@styles/*": [
-        "src/styles/*", "src/utils/data.js"
+        "src/styles/*", "src/utils/data.js", "src/pages/index.js"
       ],
       "@utils/*": [
         "src/utils/*"

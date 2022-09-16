@@ -71,7 +71,7 @@ const Footer = ({ footerLight, style, footerGradient }: FooterProps) => {
                   </form>
                   <div className="ratting-wrap mt-4">
                     <h6 className="mb-0">10/10 Overall rating</h6>
-                    <Rating />
+                    {/* <Rating /> */}
                   </div>
                 </div>
               </div>
@@ -79,7 +79,7 @@ const Footer = ({ footerLight, style, footerGradient }: FooterProps) => {
                 <div className="row">
                   <div className="col-md-4 col-lg-4 mt-4 mt-md-0 mt-lg-0">
                     <div className="footer-single-col">
-                      <h3>Primary Pages</h3>
+                      <h3>Company</h3>
                       <ul className="list-unstyled footer-nav-list mb-lg-0">
                         {footerPrimaryPages.map((primaryPage, i) => (
                           <li key={i + 1}>
@@ -144,13 +144,7 @@ const Footer = ({ footerLight, style, footerGradient }: FooterProps) => {
               <div className="col-md-7 col-lg-7">
                 <div className="copyright-text">
                   <p className="mb-lg-0 mb-md-0">
-                    &copy; 2022 Quiety Rights Reserved. Designed By{' '}
-                    <a
-                      href="https://themetags.com/"
-                      className="text-decoration-none"
-                    >
-                      ThemeTags
-                    </a>
+                    &copy; {new Date().getFullYear()} {process.env.NEXT_PUBLIC_NAME} Rights Reserved.
                   </p>
                 </div>
               </div>

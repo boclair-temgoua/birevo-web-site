@@ -66,7 +66,7 @@ const CryptoBlog = () => {
               <Link
                 href="/blogs"
               >
-                  <a className="rounded-btn-outline text-decoration-none">
+                  <a className="btn-outline-primary btn rounded-pill">
                   All Blog Post
                   </a>
               </Link>

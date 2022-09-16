@@ -1,4 +1,3 @@
-import { TiContacts } from 'react-icons/ti';
 import {
   BiServer,
   BiNews,
@@ -303,9 +302,6 @@ const navHomeOne = [
     info: 'Different type of Agency',
     href: 'startup-agency',
   },
-];
-
-const navHomeTwo = [
   {
     title: 'Data Analysis',
     info: ' Software & Data Analysis',
@@ -316,6 +312,9 @@ const navHomeTwo = [
     info: 'Software & Data Analysis',
     href: 'app-landing-two',
   },
+];
+
+const navHomeTwo = [
   {
     title: 'IT Solution',
     info: 'IT Solution and Sass Application',
@@ -323,18 +322,33 @@ const navHomeTwo = [
   },
   {
     title: 'Cyber Security',
-    info: 'Cyber Security Landign Page',
+    info: 'Cyber Security Landing Page',
     href: 'cyber-security',
   },
   {
     title: 'Crypto Currency',
-    info: 'Crypto Currency Landign Page',
+    info: 'Crypto Currency Landing Page',
     href: 'crypto-currency',
   },
   {
     title: 'Game Solution',
-    info: 'Crypto Server Landign Page',
+    info: 'Crypto Server Landing Page',
     href: 'game-solution',
+  },
+  {
+    title: 'Payment Gatway',
+    info: 'Payment Landing Page',
+    href: 'payment-gateway',
+  },
+  {
+    title: 'Digital Marketing',
+    info: 'Digital Landing Page',
+    href: 'digital-marketing',
+  },
+  {
+    title: 'Conference',
+    info: 'Conference Landing Page',
+    href: 'conference',
   },
 ];
 
@@ -388,20 +402,25 @@ const offcanvasMenuData = [
   },
   {
     title: 'Cyber Security',
-    info: 'Cyber Security Landign Page',
+    info: 'Cyber Security Landing Page',
     href: 'cyber-security',
   },
   {
     title: 'Crypto Currency',
-    info: 'Crypto Currency Landign Page',
+    info: 'Crypto Currency Landing Page',
     href: 'crypto-currency',
   },
   {
     title: 'Game Solution',
-    info: 'Crypto Server Landign Page',
+    info: 'Crypto Server Landing Page',
     href: 'game-solution',
   },
-]
+  {
+    title: 'Payment Gatway',
+    info: 'Payment Landing Page',
+    href: 'payment-gateway',
+  },
+];
 
 const navCompanyLinks = [
   {
@@ -1533,104 +1552,121 @@ const ItServiceData = [
   {
     serviceImg: '/service/coding.png',
     serviceTitle: 'Web Development',
-    serviceDesc: 'There are many variations of the passages of Lorem Ipsum is an available the done.',
-    className: 'border-bottom border-end'
+    serviceDesc:
+      'There are many variations of the passages of Lorem Ipsum is an available the done.',
+    className: 'border-bottom border-end',
   },
   {
     serviceImg: '/service/app-development.png',
     serviceTitle: 'App Development',
-    serviceDesc: 'There are many variations of the passages of Lorem Ipsum is an available the done.',
-    className: 'border-bottom border-end'
+    serviceDesc:
+      'There are many variations of the passages of Lorem Ipsum is an available the done.',
+    className: 'border-bottom border-end',
   },
   {
     serviceImg: '/service/shield.png',
     serviceTitle: 'Data Security',
-    serviceDesc: 'There are many variations of the passages of Lorem Ipsum is an available the done.',
-    className: 'border-bottom'
+    serviceDesc:
+      'There are many variations of the passages of Lorem Ipsum is an available the done.',
+    className: 'border-bottom',
   },
   {
     serviceImg: '/service/curve.png',
     serviceTitle: 'UI/UX Development',
-    serviceDesc: 'There are many variations of the passages of Lorem Ipsum is an available the done.',
-    className: 'border-end'
+    serviceDesc:
+      'There are many variations of the passages of Lorem Ipsum is an available the done.',
+    className: 'border-end',
   },
   {
     serviceImg: '/service/graphic-design.png',
     serviceTitle: 'Graphics Design',
-    serviceDesc: 'There are many variations of the passages of Lorem Ipsum is an available the done.',
-    className: 'border-end'
+    serviceDesc:
+      'There are many variations of the passages of Lorem Ipsum is an available the done.',
+    className: 'border-end',
   },
   {
     serviceImg: '/service/promotion.png',
     serviceTitle: 'Digital Marketing',
-    serviceDesc: 'There are many variations of the passages of Lorem Ipsum is an available the done.',
-    className: ''
+    serviceDesc:
+      'There are many variations of the passages of Lorem Ipsum is an available the done.',
+    className: '',
   },
-]
+];
 const testimonialFourData = [
   {
-  quoate: 'You don’t have to be constantly searching the web to get price updates. Just use our coin calculator and simply get the desired result with a simple click.',
-  authorAvatar: "/testimonial/app-testimonial-1.png",
-  authorName: 'Noah L. Paulsen',
-  quoateDate: 'Feb 19, 2022'
-},
-{
-  quoate: 'You don’t have to be constantly searching the web to get price updates. Just use our coin calculator and simply get the desired result with a simple click.',
-  authorAvatar: "/testimonial/app-testimonial-2.png",
-  authorName: 'Noah L. Paulsen',
-  quoateDate: 'Feb 19, 2022'
-},
-{
-  quoate: 'You don’t have to be constantly searching the web to get price updates. Just use our coin calculator and simply get the desired result with a simple click.',
-  authorAvatar: "/testimonial/app-testimonial-3.png",
-  authorName: 'Ariya Stark',
-  quoateDate: 'June 24, 2022'
-}]
-const cryptoBlogData = [{
-  blogThumb: '/cbl-1.png',
-  blogTitle: 'How Filecoin is Up in a Week Could Take Care',
-  blogExerpt: 'Words combined with a handful of model to generate which looks reasonable.',
-  authorAvatar: "/testimonial/app-testimonial-1.png",
-  authorName: 'St Adward',
-  postDate: 'Feb 19, 2022'
-},
-{
-  blogThumb: '/cbl-2.png',
-  blogTitle: 'How Filecoin is Up in a Week Could Take Care',
-  blogExerpt: 'Words combined with a handful of model to generate which looks reasonable.',
-  authorAvatar: '/testimonial/app-testimonial-2.png',
-  authorName: 'St Adward',
-  postDate: 'Feb 19, 2022'
-},
-{
-  blogThumb: '/cbl-3.png',
-  blogTitle: 'How Filecoin is Up in a Week Could Take Care',
-  blogExerpt: 'Words combined with a handful of model to generate which looks reasonable.',
-  authorAvatar: "/testimonial/app-testimonial-3.png",
-  authorName: 'St Adward',
-  postDate: 'Feb 19, 2022'
-}]
-const cyberBlogData = [{
-  blogThumb: '/blog/c-blog-1.jpg',
-  postAuthor: 'Admin',
-  postDate: 'April 25, 2022',
-  title: 'The Steps to GainingPrivileged Access Security',
-  linkText: 'Read more'
-},
-{
-  blogThumb: '/blog/c-blog-2.jpg',
-  postAuthor: 'Admin',
-  postDate: 'April 25, 2022',
-  title: 'Protect Your Workplace FromCyber Attacks',
-  linkText: 'Read more'
-},
-{
-  blogThumb: '/blog/c-blog-3.jpg',
-  postAuthor: 'Admin',
-  postDate: 'April 25, 2022',
-  title: 'Mid-Market Businesses, Don’tSmall about Security',
-  linkText: 'Read more'
-}]
+    quoate:
+      'You don’t have to be constantly searching the web to get price updates. Just use our coin calculator and simply get the desired result with a simple click.',
+    authorAvatar: '/testimonial/app-testimonial-1.png',
+    authorName: 'Noah L. Paulsen',
+    quoateDate: 'Feb 19, 2022',
+  },
+  {
+    quoate:
+      'You don’t have to be constantly searching the web to get price updates. Just use our coin calculator and simply get the desired result with a simple click.',
+    authorAvatar: '/testimonial/app-testimonial-2.png',
+    authorName: 'Noah L. Paulsen',
+    quoateDate: 'Feb 19, 2022',
+  },
+  {
+    quoate:
+      'You don’t have to be constantly searching the web to get price updates. Just use our coin calculator and simply get the desired result with a simple click.',
+    authorAvatar: '/testimonial/app-testimonial-3.png',
+    authorName: 'Ariya Stark',
+    quoateDate: 'June 24, 2022',
+  },
+];
+const cryptoBlogData = [
+  {
+    blogThumb: '/cbl-1.png',
+    blogTitle: 'How Filecoin is Up in a Week Could Take Care',
+    blogExerpt:
+      'Words combined with a handful of model to generate which looks reasonable.',
+    authorAvatar: '/testimonial/app-testimonial-1.png',
+    authorName: 'St Adward',
+    postDate: 'Feb 19, 2022',
+  },
+  {
+    blogThumb: '/cbl-2.png',
+    blogTitle: 'How Filecoin is Up in a Week Could Take Care',
+    blogExerpt:
+      'Words combined with a handful of model to generate which looks reasonable.',
+    authorAvatar: '/testimonial/app-testimonial-2.png',
+    authorName: 'St Adward',
+    postDate: 'Feb 19, 2022',
+  },
+  {
+    blogThumb: '/cbl-3.png',
+    blogTitle: 'How Filecoin is Up in a Week Could Take Care',
+    blogExerpt:
+      'Words combined with a handful of model to generate which looks reasonable.',
+    authorAvatar: '/testimonial/app-testimonial-3.png',
+    authorName: 'St Adward',
+    postDate: 'Feb 19, 2022',
+  },
+];
+const cyberBlogData = [
+  {
+    blogThumb: '/blog/c-blog-1.jpg',
+    postAuthor: 'Admin',
+    postDate: 'April 25, 2022',
+    title: 'The Steps to GainingPrivileged Access Security',
+    linkText: 'Read more',
+  },
+  {
+    blogThumb: '/blog/c-blog-2.jpg',
+    postAuthor: 'Admin',
+    postDate: 'April 25, 2022',
+    title: 'Protect Your Workplace FromCyber Attacks',
+    linkText: 'Read more',
+  },
+  {
+    blogThumb: '/blog/c-blog-3.jpg',
+    postAuthor: 'Admin',
+    postDate: 'April 25, 2022',
+    title: 'Mid-Market Businesses, Don’tSmall about Security',
+    linkText: 'Read more',
+  },
+];
 export {
   offcanvasMenuData,
   cyberBlogData,

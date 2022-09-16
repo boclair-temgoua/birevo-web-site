@@ -61,7 +61,7 @@ const TestimonialThree = () => {
               <div className="appTwoReviewSwiper">
                 <Swiper {...swiperOption}>
                   <SwiperSlide>
-                    <div className=" single-review-slider p-lg-5 p-4 bg-white rounded-custom border my-lg-4">
+                    <div className="single-review-slider p-lg-5 p-4 bg-white rounded-custom border my-lg-4">
                       <Rating />
                       <h5 className="h6">5 review average in our app</h5>
                       <p>

@@ -16,11 +16,10 @@ const HeroSectionFourth = ({ bgDark }) => {
         <div className="row align-items-center justify-content-lg-between">
           <div className="col-xl-5 col-lg-5">
             <div
-              className="hero-content-wrap text-center text-xl-start text-lg-start"
-              data-aos="fade-right"
+              className="hero-content-wrap mt-5 text-center text-xl-start text-lg-start"
             >
               <HeroTitle
-                title="Powerful Solutions for Your Business"
+                title="Advanced Solutions for Your Business"
                 desc="Proactively coordinate quality quality vectors vis-a-vis
                   supply chains client-centric web services."
               />

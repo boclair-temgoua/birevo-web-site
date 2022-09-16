@@ -2,13 +2,12 @@
 import React from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation } from 'swiper/core';
+import { Navigation } from 'swiper';
 
 import Rating from '../common/Rating';
 import SectionTitle from '../common/SectionTitle';
 import { TestimonialData } from '../../utils/data';
 
-SwiperCore.use([Navigation]);
 
 const TestimonialTwo = ({ dark, bgWhite }) => {
   const swiperOption = {
@@ -45,9 +44,8 @@ const TestimonialTwo = ({ dark, bgWhite }) => {
   return (
     <>
       <section
-        className={`testimonial-section ${
-          dark ? 'bg-dark' : 'bg-light'
-        } ptb-120 ${bgWhite ? 'bg-white' : ''}`}
+        className={`testimonial-section ${dark ? 'bg-dark' : 'bg-light'
+          } ptb-120 ${bgWhite ? 'bg-white' : ''}`}
       >
         <div className="container">
           <div className="row justify-content-center align-content-center">
@@ -77,15 +75,14 @@ const TestimonialTwo = ({ dark, bgWhite }) => {
           <div className="row">
             <div className="col-12">
               <div className="position-relative">
-                <Swiper {...swiperOption}>
+                <Swiper {...swiperOption} modules={[Navigation]}>
                   {TestimonialData.map((data) => (
                     <SwiperSlide key={data.id}>
                       <div
-                        className={`p-5 rounded-custom position-relative ${
-                          dark
-                            ? 'bg-custom-light text-white'
-                            : 'border border-2'
-                        }   `}
+                        className={`p-5 rounded-custom position-relative ${dark
+                          ? 'bg-custom-light text-white'
+                          : 'border border-2'
+                          }   `}
                       >
                         <img
                           src="/testimonial/quotes-dot.svg"

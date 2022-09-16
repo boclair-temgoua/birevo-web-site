@@ -11,7 +11,7 @@ export default function GamePrice() {
               <h2 className="text-white mb-4">Check Out Our Hosting Suite</h2>
               <p className="m-0 text-off-white">
                 There are many variations of passages of Lorem Ipsum available,
-                but the majority randomised words which look even slightly
+                but the majority randomised words which don't look even slightly
                 believable.
               </p>
             </div>

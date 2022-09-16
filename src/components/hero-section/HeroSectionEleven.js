@@ -1,11 +1,21 @@
-import VideoModal from '@components/common/VideoModal'
+
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react';
+import { IoPlayCircleOutline } from 'react-icons/io5';
+// import ModalVideo from 'react-modal-video';
 
 const HeroSectionEleven = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <section className="hero-eleven bg-dark-black pt-120">
+      
+      {/* <ModalVideo
+        channel="youtube"
+        isOpen={isOpen}
+        videoId="hAP2QF--2Dg"
+        onClose={() => setOpen(false)}
+      /> */}
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-5 col-md-12">
@@ -17,11 +27,21 @@ const HeroSectionEleven = () => {
                 You might wonder why a designer would choose to use Morem text
                 paragraphs in English or their native language architect interactive.
               </p>
-              <div className="action-btn mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
+              <div className="action-btns mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
                 <Link href="/request-demo" >
-                 <a className="rounded-btn"> Get Started</a>
+                 <a className="btn rounded-pill btn-primary me-3"> Get Started</a>
                 </Link>
-                <VideoModal className="true"/>
+                <div>
+                    <Link href="/#">
+                      <a
+                        onClick={() => setOpen(true)}
+                        type="button"
+                        className="text-decoration-none d-inline-flex align-items-center watch-now-btn"
+                      >
+                        <IoPlayCircleOutline className="me-2" /> Watch Demo
+                      </a>
+                    </Link>
+                  </div>
               </div>
             </div>
           </div>

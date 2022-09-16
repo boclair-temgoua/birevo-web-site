@@ -15,7 +15,7 @@ const VideoPromo = () => {
                   "url('video_bg.png')no-repeat center top/cover",
               }}
             >
-              <AnimatedButton/>
+              <AnimatedButton />
             </div>
           </div>
           <div className="col-lg-6">

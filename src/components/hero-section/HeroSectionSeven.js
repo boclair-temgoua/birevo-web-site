@@ -1,10 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+
 import Link from 'next/link';
-import VideoModal from '../common/VideoModal';
 import HeroTitle from '../common/HeroTitle';
+import React, { useState } from 'react';
+import { IoPlayCircleOutline } from 'react-icons/io5';
+// import ModalVideo from 'react-modal-video';
 
 const HeroSectionSeven = () => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
       <section
@@ -13,6 +16,12 @@ const HeroSectionSeven = () => {
           background: "url('/hero-dot-bg.png')no-repeat center right",
         }}
       >
+        {/* <ModalVideo
+        channel="youtube"
+        isOpen={isOpen}
+        videoId="hAP2QF--2Dg"
+        onClose={() => setOpen(false)}
+      /> */}
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-10">
@@ -22,11 +31,21 @@ const HeroSectionSeven = () => {
                   desc="Proactively coordinate quality quality vectors vis-a-vis
                   supply chains. Quickly engage client-centric web services."
                 />
-                <div className="action-btn mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
+                <div className="action-btns mt-5 align-items-center d-block d-sm-flex d-lg-flex d-md-flex">
                   <Link href="/request-demo">
                     <a className="btn btn-danger me-3">Request For Demo</a>
                   </Link>
-                  <VideoModal className />
+                  <div>
+                    <Link href="/#">
+                      <a
+                        onClick={() => setOpen(true)}
+                        type="button"
+                        className="text-decoration-none d-inline-flex align-items-center watch-now-btn"
+                      >
+                        <IoPlayCircleOutline className="me-2" /> Watch Demo
+                      </a>
+                    </Link>
+                  </div>
                 </div>
                 <div className="row justify-content-lg-start mt-60">
                   <h6 className="text-white-70 mb-2">

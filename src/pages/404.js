@@ -74,7 +74,6 @@ const NotFoundPage = () => {
                     />
                   </li>
                 </ul>
-
                 <img
                   src="/hero-1.png"
                   alt="hero img"

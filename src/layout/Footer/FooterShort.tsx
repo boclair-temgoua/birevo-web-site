@@ -12,10 +12,7 @@ const FooterShort = () => {
             <div className="col-md-7 col-lg-7">
               <div className="copyright-text">
                 <p className="mb-lg-0 mb-md-0">
-                  &copy; 2022 Quiety Rights Reserved. Designed By{' '}
-                  <Link href="https://themetags.com/">
-                    <a className="text-decoration-none">ThemeTags</a>
-                  </Link>
+                  &copy; {new Date().getFullYear()} {process.env.NEXT_PUBLIC_NAME} Rights Reserved.
                 </p>
               </div>
             </div>

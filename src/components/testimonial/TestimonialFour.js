@@ -14,7 +14,7 @@ const TestimonialFour = () => {
     spaceBetween: 30,
     slidesPerGroup: 2,
     loop: true,
-   
+
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -48,43 +48,43 @@ const TestimonialFour = () => {
           <div className="col-lg-6 col-md-12">
             <div className="text-left text-lg-end mb-5 mb-lg-0">
               <Link href="/about-us">
-                <div className="rounded-btn">
-                All Feedback
-                </div>
+                <a className="btn btn-primary rounded-pill">
+                  All Feedback
+                </a>
               </Link>
             </div>
           </div>
         </div>
         <div className="row">
           <Swiper {...swiperOption}>
-              {testimonialFourData.map((item,i)=>(
-                <SwiperSlide key={i+0}>
-                    <div className="crypto-single-testimonial bg-soft-black">
-                        <Rating/>
-                        <blockquote className="m-0">
-                        <p className="m-0">
-                            {item.quoate}
-                        </p>
-                        </blockquote>
-                        <div className="author-meta d-flex align-items-center">
-                        <div className="pe-3">
-                            <Image
-                            src={item.authorAvatar}
-                            alt="Author"
-                            width={50}
-                            height={50}
-                            />
-                        </div>
-                        <div>
-                            <h5 className="fw-normal text-white h6 m-0">
-                            {item.authorName}
-                            </h5>
-                            <span>{item.quoateDate}</span>
-                        </div>
-                        </div>
+            {testimonialFourData.map((item, i) => (
+              <SwiperSlide key={i + 0}>
+                <div className="crypto-single-testimonial bg-soft-black">
+                  <Rating />
+                  <blockquote className="m-0">
+                    <p className="m-0">
+                      {item.quoate}
+                    </p>
+                  </blockquote>
+                  <div className="author-meta d-flex align-items-center">
+                    <div className="pe-3">
+                      <Image
+                        src={item.authorAvatar}
+                        alt="Author"
+                        width={50}
+                        height={50}
+                      />
                     </div>
-                </SwiperSlide>
-              ))}
+                    <div>
+                      <h5 className="fw-normal text-white h6 m-0">
+                        {item.authorName}
+                      </h5>
+                      <span>{item.quoateDate}</span>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

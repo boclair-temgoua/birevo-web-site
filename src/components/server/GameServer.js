@@ -116,7 +116,7 @@ export default function GameServer() {
                                 <a className='text-decoration-none'>
                                     <div className='d-flex align-items-center'>
                                         <img src="/server/s8.png" className='img-fluid me-3' alt="server" />
-                                        <h5 className='m-0 text-white fw-medium'>{`Garry's Mod`}</h5>
+                                        <h5 className='m-0 text-white fw-medium'>Garry's Mod</h5>
                                     </div>
                                 </a>
                             </Link>
