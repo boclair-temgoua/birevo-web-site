@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import { useForm, Controller } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { ContactFormRequest } from './core/index';
+import Toastify from 'toastify-js'
 import { createOneContactUs, getCountries } from './api/index';
 import { TextInput } from '../forms/TextInput';
 import { useQuery } from '@tanstack/react-query';
@@ -47,12 +48,30 @@ const ContactForm = () => {
         .then(() => {
           setHasErrors(false);
           setLoading(false)
+          Toastify({
+            text: 'Voucher has been save.',
+            className: 'info',
+            gravity: 'top', // `top` or `bottom`
+            position: 'center', // `left`, `center` or `right`
+            style: {
+              background: 'linear-gradient(to right, #3CB371, #3CB371)',
+            },
+          }).showToast()
           reset()
 
         })
         .catch((error) => {
           setHasErrors(true)
           setLoading(false)
+          Toastify({
+            text: 'An error has occurred.',
+            className: 'info',
+            gravity: 'top', // `top` or `bottom`
+            position: 'center', // `left`, `center` or `right`
+            style: {
+              background: 'linear-gradient(to right, #FF0000, #FF0000)',
+            },
+          }).showToast()
           setHasErrors(error.response.data.message);
         });
     }, 1000)
@@ -161,7 +180,7 @@ const ContactForm = () => {
               </div>
               <div className='d-flex flex-wrap justify-content-center mt-4'>
                 <button type='submit' className={`btn btn-primary`}
-                disabled={loading}
+                  disabled={loading}
                 >
                   {!loading && <span className='indicator-label'>Get in Touch</span>}
                   {loading && (
