@@ -4,8 +4,8 @@ import Head from 'next/head';
 export type LayoutProps = {
   title: string;
   desc: string;
-  hasClass: string;
-  classOpt: string;
+  hasClass?: string;
+  classOpt?: string;
   children: JSX.Element | any,
 }
 

@@ -32,6 +32,7 @@
   "include": [
     "next-env.d.ts",
     ".",
+    "**/*.js",
     "**/*.ts",
     "**/*.tsx",
     "webpack-rtl.config.js"

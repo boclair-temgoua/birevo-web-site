@@ -12,9 +12,9 @@ import {
 import Rating from '../../components/common/Rating';
 
 export type FooterProps = {
-  footerLight: string;
-  style: any;
-  footerGradient: string;
+  footerLight?: string;
+  style?: any;
+  footerGradient?: string;
 }
 const Footer = ({ footerLight, style, footerGradient }: FooterProps) => {
   return (
