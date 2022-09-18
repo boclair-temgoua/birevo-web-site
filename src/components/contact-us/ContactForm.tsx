@@ -49,10 +49,10 @@ const ContactForm = () => {
           setHasErrors(false);
           setLoading(false)
           Toastify({
-            text: 'Voucher has been save.',
+            text: 'Message contact has been save successfully.',
             className: 'info',
             gravity: 'top', // `top` or `bottom`
-            position: 'center', // `left`, `center` or `right`
+            position: 'right', // `left`, `center` or `right`
             style: {
               background: 'linear-gradient(to right, #3CB371, #3CB371)',
             },
@@ -67,7 +67,7 @@ const ContactForm = () => {
             text: 'An error has occurred.',
             className: 'info',
             gravity: 'top', // `top` or `bottom`
-            position: 'center', // `left`, `center` or `right`
+            position: 'right', // `left`, `center` or `right`
             style: {
               background: 'linear-gradient(to right, #FF0000, #FF0000)',
             },
