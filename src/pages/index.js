@@ -19,8 +19,8 @@ export default function Home() {
       <FeatureOne />
       <FeatureImgContentOne />
       <TestimonialOne darkBg />
-      <WorkProcessOne />
-      <PricingOne header="true" />
+      {/* <WorkProcessOne />
+      <PricingOne header="true" /> */}
       <FaqOne />
       <IntegrationOne />
       <SupportOne />
